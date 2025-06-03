@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Mis Tareas</h2>
+
+    <form method="POST" action="{{ url_for('main.add_task') }}" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="description" placeholder="Nueva tarea..." class="form-control" required>
+            <button class="btn btn-success" type="submit">Agregar</button>
+        </div>
+    </form>
+
+    {% if tasks %}
+        <ul class="list-group">
+            {% for task in tasks %}
+                <li class="list-group-item d-flex justify-content-between align-items-center {% if task.is_completed %}list-group-item-success{% endif %}">
+                    <span>
+                        {% if task.is_completed %}
+                            <s>{{ task.description }}</s>
+                        {% else %}
+                            {{ task.description }}
+                        {% endif %}
+                    </span>
+                    <span>
+                        <a href="{{ url_for('main.complete_task', task_id=task.id) }}" class="btn btn-sm btn-outline-primary">✔</a>
+                        <a href="{{ url_for('main.delete_task', task_id=task.id) }}" class="btn btn-sm btn-outline-danger">✖</a>
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="text-muted">No tienes tareas aún.</p>
+    {% endif %}
+</div>
+{% endblock %}

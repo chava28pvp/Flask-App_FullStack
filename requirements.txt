@@ -1,3 +1,7 @@
 Flask
 Flask-SQLAlchemy
 Flask-Migrate
+Flask-Login
+WTForms
+Flask-WTF
+pyodbc
