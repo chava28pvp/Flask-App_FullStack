@@ -5,3 +5,13 @@
 body {
     background: #e9ecef;
 }
+#formErrors {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+#formErrors.show-danger {
+  background-color: #f8d7da; /* color de .alert-danger */
+  border-color: #f5c2c7;
+  color: #842029;
+}
+
