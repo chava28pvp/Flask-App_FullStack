@@ -1,6 +1,6 @@
-Mini poryecto de FLASK (List To Do)
+Mini proyecto de FLASK (List To Do)
 
-Login con opcion de registro de Usuiarios nuevos (connected con BD)
+Login con opcion de registro de Usuarios nuevos (connected con BD)
 Diseños hechos con bootstrap y css:
 ![image](https://github.com/user-attachments/assets/98075d7b-ac4a-48de-a378-b2f792d735ca)
 Diseños hechos con bootstrap y css (a este apartado se le agrego algunas validaciones con js):
