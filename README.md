@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-Mini proyecto de FLASK (List To Do)
+Mini proyecto de FLASK (To Do List )
 
 Login con opcion de registro de Usuarios nuevos (connected con BD)
 =======
