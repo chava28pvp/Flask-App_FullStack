@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mini proyecto de FLASK (List To Do)
+=======
+Mini proyecto de FLASK (To Do List)
+>>>>>>> cd84aa1008a50c553eab0e2aa7b61c7f188d7e0b
 
 Login con opcion de registro de Usuarios nuevos (connected con BD)
 =======
